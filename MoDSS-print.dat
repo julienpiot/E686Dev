@@ -1,0 +1,142 @@
+# Input file for MoDSSPrintEventParameter 
+# - this parameter controls the printout of events 
+#   from analysis step of data analysis 
+# - these are only initial settings. parameter values 
+#   should be changed from within UserGUI in Go4 
+# - use this file to set parameter values when Go4 
+#   analysis is running in the batch mode 
+# 
+# comment lines are starting with '#' 
+# --------------------------------------------- 
+# --------------------------------------------- 
+# 
+# enable printing ? 0 = no 
+0
+# print to screen ? 
+0
+# print to file ?  # filename 
+1	tempprint_9517_Sg.dat
+# --------------------------------------------- 
+# PRINTING CONDITIONS: 
+# 
+# time condition activated ? # time limits in seconds 
+0	5906918.020	5907918.020
+# ekev condition activated ? # ekev limits in kev 
+1	9500.000	20000.000
+# emev condition activated ? # emev limits in ch 
+0	14.000	25.000
+# tof condition activated ? # tof limits in ch 
+0	1200.000	1600.000
+# egamma condition activated ? # egamma limits in kev 
+1	360.000	370.000
+# all strip ? # if no, give number of strip 
+1	6
+# xylt condition activated ? # xylt limits in ch 
+0	12.400	16.400
+# xylb condition activated ? # xylb limits in ch 
+0	17.950	21.950
+# xyht condition activated ? # xyht limits in ch 
+0	0.000	0.000
+# xyhb condition activated ? # xyhb limits in ch 
+0	0.000	0.000
+# ekevbox condition activated ? # ekevbox limits in kev 
+0	10.000	8000.000
+# emevbox condition activated ? # emevbox limits in ch 
+0	0.000	0.000
+# in pause ? 
+0
+# in pulse ? 
+0
+# antitof ? 
+1
+# antiveto ? 
+0
+# t2 bit ? 
+0
+# t3 bit ? 
+0
+# --------------------------------------------- 
+# WHICH VALUES TO PRINT: 
+# 
+# time 
+1
+# tmp 
+1
+# pausebit 
+1
+# strip 
+1
+# ekev 
+1
+# xylt 
+1
+# xylb 
+1
+# emev 
+1
+# xyht 
+1
+# xyhb 
+1
+# back strip 
+1
+# ekev box 
+1
+# emev box 
+1
+# egl1 
+1
+# egl2 
+1
+# egl3 
+1
+# egl4 
+1
+# egh1 
+0
+# egh2 
+0
+# egh3 
+0
+# egh4 
+0
+# tac gamma 1 
+0
+# tac gamma 2 
+0
+# tac gamma 3 
+0
+# tac gamma 4 
+0
+# tofbit 
+0
+# tof 
+0
+# tof1 
+0
+# tof2 
+0
+# tof3 
+0
+# vetobit 
+0
+# t2 bit 
+0
+# t3 bit 
+0
+# pu1 
+0
+# pu2 
+0
+# pu3 
+0
+# pu4 
+0
+# pu5 
+0
+# pu6 
+0
+# pu7 
+0
+# pu8 
+0

@@ -1,0 +1,12 @@
+  . /opt/go4-5.1.2-qt4/go4login
+
+  echo "exporting local modssGUI path into LD_LIBRARY_PATH ..."
+
+  export LD_LIBRARY_PATH=`pwd`/modssGUI:$LD_LIBRARY_PATH
+ 
+
+  echo seting GO4USERLIBRARY=/home/e656/E686_Analyse/localcopy/libGo4UserAnalysis.so
+  export GO4USERLIBRARY=/home/e656/E686_Analyse/localcopy/libGo4UserAnalysis.so
+
+  echo seting GO4USERGUI=/home/e656/E686_Analyse/localcopy/modssGUI
+  export GO4USERGUI=/home/e656/E686_Analyse/localcopy/modssGUI

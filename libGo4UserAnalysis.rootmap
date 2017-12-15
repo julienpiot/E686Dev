@@ -1,0 +1,20 @@
+[ libGo4UserAnalysis.so ]
+# List of selected classes
+class MoDSSAnalysis
+class MoDSSAnlEvent
+class MoDSSAnlFact
+class MoDSSAnlProc
+class MoDSSCalibParameter
+class MoDSSCorrelEvent
+class MoDSSCorrelFact
+class MoDSSCorrelParameter
+class MoDSSCorrelProc
+class MoDSSDSSDEvent
+class MoDSSFilterParameter
+class MoDSSHardwareParameter
+class MoDSSParameter
+class MoDSSPrintEventParameter
+class MoDSSSingleEvent
+class MoDSSUnpackEvent
+class MoDSSUnpackFact
+class MoDSSUnpackProc

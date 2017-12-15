@@ -1,0 +1,92 @@
+# Input file for MoDSS correlation analysis 
+# - these are only initial settings. parameter values 
+#   should be changed from within UserGUI in Go4 
+# - use this file to set parameter values when Go4 
+#   analysis is running in the batch mode 
+# 
+# comment lines are starting with '#' 
+# --------------------------------------------- 
+# 
+# --------------------------------------------- 
+# 
+# Print correlation on screen ? (1=yes 0=no) # To file ? # filename 
+1	1	Db-correlOut_2016_06_09.txt
+# What correlations to look for ? 
+# When looking just for Re-Al or Al-Fi correlation with one alpha, 
+# be sure to set number of alphas to 1 !!! (otherwise the search will 
+# continue with further generations) 
+# Re-Al   # Re-Fi  # Al-Al  # Al-Fi 
+1	0	1	0
+# Re-Ga # Al-Ga # Ga-Al # Ga-Fi # Ga-Ga 
+0	0	0	0	0
+# Use back detector in correlations ?
+0
+# Use (X or Y) energy in low energy correlations ? (Otherwise only X energy is used)
+0
+# Number of alphas ?  # minimum number of chain members to print the chain 
+2	2
+# which position shall be tested ? (only one choise possible) 
+# IDX and IDY # IDX or IDY (default) # only IDX # only IDY 
+1	0	0	0
+# size of the recoil table (defaul=5000) # size of the alpha table (default=5000) # size of the gamma table (default=5000) 
+2000000	200000	5000
+# recoil parameters 
+# recoil in low energy branch ? # used poly low energy window? # low energy limit # high energy limit [keV] 
+0	0	2000	7000
+# recoil in high energy branch ? # used poly high energy window? # low energy limit # high energy limit [ch] 
+1	0	7000	30000
+# recoil low TOF limit # high TOF limit 
+-240	3000
+# fission parameters (should be present also when they are not needed) 
+# fission during the pause ?
+0
+# fission energy window:  from - to [ch] 
+70	190
+# fission time window: from - to [ms] 
+0	30
+# gamma parameters 
+# gamma during the pause? (1- yes , 0 - no) #search gamma in the high energy branch 
+0	0
+# How to consider clovers?
+# Only one detektor # At least one detektor # Diagonal crystal taken
+0	1	0
+# gamma energy window:  from - to [keV] 
+0	2000
+# Electron required? # Electron energy - coincidencing with gamma: from - to [keV] 
+0	0	1000
+# gamma time window: from - to [ms] 
+0	0.1
+# gamma 2 parameters 
+# gamma 2 during the pause? (1- yes , 0 - no) 
+0
+# gamma 2 energy window:  from - to [keV] 
+0	2000
+# Electron required? # Electron energy - coincidencing with gamma 2: from - to [keV] 
+0	0	1000
+# gamma 2 time window: from - to [ms] 
+0	0.1
+# alpha parameters 
+# all alphas in pause ? # one alpha from the correlation pair in the pause ? 
+0	0
+# next line MUST BE repeated for each alpha generation (number of alphas given above) 
+# energy window: from - to [keV] # time window: from - to [ms] 
+# 1 alpha generation
+7758	8158	0	5000
+# 2 alpha generation
+6014	7150	0	20000
+# 3 alpha generation
+0	0	0	0
+# 4 alpha generation
+0	0	0	0
+# 5 alpha generation
+0	0	0	0
+# 6 alpha generation
+0	0	0	0
+# 7 alpha generation
+0	0	0	0
+# 8 alpha generation
+0	0	0	0
+# 9 alpha generation
+0	0	0	0
+# 10 alpha generation
+0	0	0	0

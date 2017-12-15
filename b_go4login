@@ -1,0 +1,27 @@
+#!/bin/bash
+#  comment: [ -z string ] is true if the lenght of string is zero
+# if [ -z `echo $LD_LIBRARY_PATH | awk /modssGUI/` ] ; then
+
+#  echo "===================================================="
+#  echo "be sure to run '. go4log' in your go4 work directory"
+#  echo "===================================================="
+
+  . /opt/go4-4.6.0-global/go4login $1
+
+if [ $GO4DIR != "-h" ] && [ $GO4DIR != "wrong" ]; then
+
+  echo "exporting local modssGUI path into LD_LIBRARY_PATH ..."
+
+  if [ -z `echo $LD_LIBRARY_PATH | awk /modssGUI/` ] ; then
+    export LD_LIBRARY_PATH=`pwd`/modssGUI:$LD_LIBRARY_PATH
+  fi
+
+  echo seting GO4USERLIBRARY=`pwd`/libGo4UserAnalysis.so
+  export GO4USERLIBRARY=`pwd`/libGo4UserAnalysis.so
+
+  echo seting GO4USERGUI=`pwd`/modssGUI
+  export GO4USERGUI=`pwd`/modssGUI
+
+else
+ echo "go4log already initialized"
+fi

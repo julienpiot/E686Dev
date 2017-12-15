@@ -1,0 +1,60 @@
+# Input file for Go4 MoDSS analysis
+# 
+# comment lines are starting with '#'
+# 
+# ---------------------------------------------
+# POSITIONS in mm [1] (0 - 35 mm) or in channels [0] (0 - 900)
+0
+# ---------------------------------------------
+# PROCEED WITH CALIBRATIONS ONLY WHEN THE VALUES OF
+# THE CALIBRATION VARIABLES ARE SET TO 0 (or 1) (unless you
+# know what you are doing)
+# ---------------------------------------------
+# Proceed with YH-YL calibration ? 1=yes 0=no
+0
+# Proceed with Back detector calibration ? 1=yes 0=no
+# Don't forget to set next value (and set ELB window below in this file or in the analysis)
+0
+# Alpha line energy used in back det calibration [keV]. From this value the 
+# residual energy signal from the stop detector will be substracted
+7028
+# Proceed with balistic calibration ?
+# don't forget to set next value ! (and set EL window below in this file or in the analysis)
+0
+# Alpha line used in balistic calibration. Not calibrated energy !! 
+3192
+# ---------------------------------------------
+# CONDITIONS
+# ---------------------------------------------
+# TMP1 (start - stop)
+0       130
+# TMP2 
+130     5500
+# TMP3 
+5500    20001
+# TMP4 
+10175   10200
+# EL window
+2500	4000
+# EH window
+100	250
+# ELB window
+5850	6000
+# EG window
+30	1000
+# TAC window
+0	8000
+# TOF window for gating
+0	20000
+# TOF window for TOF vs Energy spectra (number of bins 500)
+0	20000
+# Settings for a time spectra: Number of bins, Low limit, High limit
+35000 	549000 	584000
+# Defining of the strips for STOP (calibrated) vs BOX (uncalibrated) spectrum
+6	17
+# Switch for High energy strip spectra (0 - only pause events; 1 only events with TOF)
+0
+# Use polygonal condition X for recoils sent to Correlations step?
+0
+# Use polygonal condition Y for recoils sent to Correlations step?
+0

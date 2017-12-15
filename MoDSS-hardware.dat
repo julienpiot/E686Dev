@@ -1,0 +1,17 @@
+# Is new electronic???
+# 0 - electronic before 2005; 1 - electronic since 2005 (run 228)
+1
+# Run ID (MoDSS)
+297
+# Is hardware PULSE bit being used? (yes = 1)
+# (Otherwise) one has to define the TMP windows
+0
+# What is the level for filtering (rejecting) of the events in Unpack part?
+# 0 - no filter, all events are accepted
+# 1 - the events without the signal in the stop detector are rejected. 
+1
+# Level for filtering (rejecting) of the events in Analysis part (not implemented yet)
+# 0 - no filter, all events are accepted
+# 1 - Rejecting of the events out of the defined TOF vs E window
+# Is supposed to reject everything except of reaction products
+0
